@@ -32,3 +32,49 @@
 .spacing100{
     height: 100px;
 }
+
+body{
+    background-image: url(../images/fon.png);
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        background-image: url(../images/fond.png);
+    }
+}
+
+.input-field input[type=text] {
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: white;
+    padding-left: 5px;
+}
+.input-field input[type=email] {
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: white;
+    padding-left: 5px;
+}
+.input-field textarea {
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: white;
+    padding-left: 5px;
+}
+.row .input-field input:focus {
+    border-bottom: 1px solid #fff !important;
+    box-shadow: 0 1px 0 0 #fff !important
+}
+.row .input-field textarea:focus {
+    border-bottom: 1px solid #fff !important;
+    box-shadow: 0 1px 0 0 #fff !important
+}
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+.input-field input[type=email].valid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
